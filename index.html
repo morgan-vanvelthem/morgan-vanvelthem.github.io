@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Vanvelthem | Développeur Full Stack</title>
+    <meta name="description" content="Portfolio de Morgan Vanvelthem, Développeur Full Stack à la recherche d'un stage.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5', // Indigo-600
+                        secondary: '#1E293B', // Slate-800
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-secondary tracking-tight">Morgan<span class="text-primary">.</span></a>
+            <div class="space-x-6 hidden md:flex">
+                <a href="#about" class="text-gray-600 hover:text-primary transition">Profil</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary transition">Compétences</a>
+                <a href="#projects" class="text-gray-600 hover:text-primary transition">Projets</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://github.com/MorganVanvelthem" target="_blank" class="text-gray-600 hover:text-primary text-xl transition"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/morgan-vanvelthem-671188368/" target="_blank" class="text-gray-600 hover:text-primary text-xl transition"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-secondary mb-6 tracking-tight">
+                Bonjour, je suis <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-500">Morgan Vanvelthem</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 font-light">
+                Développeur Full Stack <strong class="font-semibold text-gray-800">(React / Symfony)</strong>.
+            </p>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Étudiant en 2ème année de BUT Informatique, je recherche un <strong class="text-gray-800">stage de 3 mois à partir du 07 avril</strong>, avec possibilité de poursuite en alternance.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="CV_Morgan_Vanvelthem_FullStack.pdf" target="_blank" class="bg-primary text-white px-8 py-3 rounded-lg font-medium hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i> Télécharger mon CV
+                </a>
+                <a href="#projects" class="bg-white text-gray-700 border border-gray-300 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition flex items-center gap-2">
+                    Voir mes projets <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-12 text-center">Stack Technique</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-primary text-3xl mb-4"><i class="fa-brands fa-react"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Front-end</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> JavaScript (React)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> HTML5 / CSS3</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-primary text-3xl mb-4"><i class="fa-brands fa-php"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Back-end & BDD</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> PHP (Symfony)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Java (Scolaire)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> SQL (MariaDB)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Python / C++ / C</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                    <div class="text-primary text-3xl mb-4"><i class="fa-brands fa-docker"></i></div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">DevOps & Outils</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Docker / Linux</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Git / GitLab CI/CD</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i> Agile (Scrum, Kanban)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-4 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-secondary mb-12 text-center">Projets Récents</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col hover:shadow-lg transition">
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-secondary">Plateforme Web Smart Campus</h3>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Projet Phare</span>
+                        </div>
+                        <p class="text-gray-600 mb-4 text-sm">Équipe de 5 — Méthode Scrum — 3 mois</p>
+                        <p class="text-gray-700 mb-6">Développement full stack d’une application de suivi et d'optimisation des conditions environnementales d’un bâtiment (IoT).</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">React</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Symfony/PHP</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">API Java</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Docker</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-gray-50 border-t border-gray-100">
+                        <a href="Portfolio_Morgan_Vanvelthem_SmartCampus.pdf" target="_blank" class="text-primary font-semibold hover:text-indigo-800 flex items-center gap-2">
+                            <i class="fa-solid fa-file-pdf"></i> Consulter l'architecture technique
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col hover:shadow-lg transition">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Application de gestion — École de musique</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Méthode Scrum — 1 mois</p>
+                        <p class="text-gray-700 mb-6">Création d'une application web facilitant la gestion des adhérents et l'administration courante du club de musique.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Symfony</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">PHP</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">SQL</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col hover:shadow-lg transition">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Skull Street — Jeu vidéo rétro</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Équipe de 4 — Kanban — 1 mois</p>
+                        <p class="text-gray-700 mb-6">Conception et programmation orientée objet d'un jeu vidéo de bureau de type arcade.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">C++</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Framework Qt</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Git</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-200 flex flex-col hover:shadow-lg transition">
+                    <div class="p-8 flex-grow">
+                        <h3 class="text-2xl font-bold text-secondary mb-2">Site vitrine — Coach sportif</h3>
+                        <p class="text-gray-600 mb-4 text-sm">Projet avec client réel</p>
+                        <p class="text-gray-700 mb-6">Recueil des besoins, maquettage et développement front-end sur mesure pour un professionnel indépendant.</p>
+                        
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">React</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                            <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-medium">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-secondary text-white py-12 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Prêt à collaborer ?</h2>
+            <p class="text-gray-400 mb-8">N'hésitez pas à me contacter pour discuter d'opportunités de stage.</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="mailto:morgan.vanvelthem@gmail.com" class="text-white hover:text-primary transition text-2xl"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/morgan-vanvelthem-671188368/" target="_blank" class="text-white hover:text-primary transition text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/MorganVanvelthem" target="_blank" class="text-white hover:text-primary transition text-2xl"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="text-gray-500 text-sm">© 2026 Morgan Vanvelthem. Fait avec React, Symfony et beaucoup de café.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
